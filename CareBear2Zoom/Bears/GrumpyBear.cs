@@ -20,7 +20,7 @@ namespace CareBear2Zoom.Bears
         // when I want to override virtual stuff, I use override, also
         public override void Stare()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Stares aggressively into the distance while shooting a beam from his belly.");
         }
 
         public override void Hug(CareBearBase careBearToHug)
