@@ -20,6 +20,7 @@ namespace CareBear2Zoom.Bears
         // it must be used, but we do not determine how or what happens inside the method
         // abstract methods must be fleshed out to be implemented by an inheriting class
         // abstract: the inheriting class has to define it; actually, the inheriting class MUST use this method
+        // you must override abstract
         public abstract void Stare();
 
         // this public method Care is completely shared behavior.
@@ -35,6 +36,7 @@ namespace CareBear2Zoom.Bears
         // virtual means that each individual inheriting care bear can change this
         // virtual: I've defined it, but you are welcome to modify it
         // virtual means you can change it, but you do not have to
+        // you can choose not to override virtual
         public virtual void Hug(CareBearBase careBearToHug)
         {
             Console.WriteLine($"{Name} runs over to {careBearToHug.Name} and squeezes them, pressing their {BellyBadge} and {careBearToHug.BellyBadge} together.");
